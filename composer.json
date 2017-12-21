@@ -1,0 +1,24 @@
+{
+  "name": "humbkr/magallanes-drush",
+  "description": "Drush tasks for Magallanes 3 php deployment tool",
+  "homepage": "https://github.com/humbkr/magallanes-drush",
+  "license": "MIT",
+  "type": "library",
+  "keywords": ["deployment", "magallanes"],
+  "authors": [
+    {
+      "name": "Humbkr",
+      "email": "humbkr@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "symfony/process": "^3.0",
+    "andres-montanez/Magallanes": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MageDrush\\": "src/"
+    }
+  }
+}
