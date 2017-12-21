@@ -14,7 +14,7 @@
   "require": {
     "php": ">=5.5.9",
     "symfony/process": "^3.0",
-    "andres-montanez/Magallanes": "^3.0"
+    "andres-montanez/Magallanes": "^3.0 @dev"
   },
   "autoload": {
     "psr-4": {
