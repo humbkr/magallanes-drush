@@ -1,0 +1,9 @@
+# Dependencies
+vendor
+/composer.lock
+
+# IDE stuff
+.idea
+
+# Project
+utils.txt
