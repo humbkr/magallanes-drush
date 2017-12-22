@@ -120,38 +120,38 @@ magephp:
 
 ## Documentation
 
-#####drush/cache-clear
+###drush/cache-clear
 Description: (d7) Clear caches  
 Drush command: `drush cc <cache(s) name(s)>`  
 Options:
   - caches (optional) : list of caches to be cleared (separated by a space). If
     not specified, clear all caches
 
-#####drush/cache-rebuild
+###drush/cache-rebuild
 Description: (d8) Rebuild caches  
 Drush command: `drush cr`
 
-#####drush/config-export
+###drush/config-export
 Description: (d8) Export the configuration to the sync folder specified in settings.php  
 Drush command: `drush cex -y`
 
-#####drush/config-import
+###drush/config-import
 Description: (d8) Import the configuration from the sync folder specified in settings.php  
 Drush command: `drush cim -y`
 
-#####drush/custom
+###drush/custom
 Description: Run a specified drush command. Use only if you can't create a proper custom Magallanes task.  
 Drush command: `drush <your command>`  
 Options:
   - command (mandatory): the drush command to run, without the "drush" part. Ex: "en mymodule"  
 
-#####drush/features-revert
+###drush/features-revert
 Description: Revert one or several Features  
 Drush command: `drush fr <features list> -y` / `drush fra -y`  
 Options:
   - features (optional): List of Features to revert, separated by spaces. If not specified, all Features will be reverted.  
 
-#####drush/update-database
+###drush/update-database
 Description: Runs database updates  
 Drush command: `drush updb -y`
 
