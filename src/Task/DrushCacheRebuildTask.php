@@ -4,6 +4,9 @@ namespace MageDrush\Task;
 
 use Symfony\Component\Process\Process;
 
+/**
+ * Runs a cache rebuild (d8).
+ */
 class DrushCacheRebuildTask extends DrushAbstractTask {
   public function getName()
   {

@@ -4,10 +4,17 @@ namespace MageDrush\Task;
 
 use Symfony\Component\Process\Process;
 
+/**
+ * Runs a custom drush command. Use only if you can't create your own tasks.
+ *
+ * To specify your drush command, pass a "command" parameter:
+ * post-release:
+ *     - drush/custom { command: 'yourcommand --yourflags' }
+ */
 class DrushCustomCommand extends DrushAbstractTask {
   public function getName()
   {
-    return 'drush/update-database';
+    return 'drush/custom';
   }
 
   public function getDescription()

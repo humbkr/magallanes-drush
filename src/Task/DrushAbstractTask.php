@@ -7,6 +7,9 @@ use Mage\Task\AbstractTask;
 /**
  * Abstract Task for Drupal Drush.
  *
+ * This task is responsible for building the drush call, ie the "drush" +
+ * alias, preceded by a change directory if necessary.
+ *
  * The following options can be set at any level in the .mage.yml file:
  *   - alias: the drush alias to use (optional)
  *   - drupal_root: the drupal root folder on the server> Warning, don't forget

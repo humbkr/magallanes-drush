@@ -4,6 +4,9 @@ namespace MageDrush\Task;
 
 use Symfony\Component\Process\Process;
 
+/**
+ * Runs a database update.
+ */
 class DrushUpdateDatabaseTask extends DrushAbstractTask {
   public function getName()
   {

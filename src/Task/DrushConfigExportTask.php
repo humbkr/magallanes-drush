@@ -5,22 +5,22 @@ namespace MageDrush\Task;
 use Symfony\Component\Process\Process;
 
 /**
- * Runs a configuration import (d8).
+ * Runs a configuration export (d8).
  */
-class DrushConfigImportTask extends DrushAbstractTask {
+class DrushConfigExportTask extends DrushAbstractTask {
   public function getName()
   {
-    return 'drush/config-import';
+    return 'drush/config-export';
   }
 
   public function getDescription()
   {
-    return '[Drush] Run drush cim -y';
+    return '[Drush] Run drush cex -y';
   }
 
   public function execute()
   {
-    $cmd = $this->buildDrushCall() . 'cim -y';
+    $cmd = $this->buildDrushCall() . 'cex -y';
 
     /** @var Process $process */
     $process = $this->runtime->runCommand(trim($cmd));
